@@ -6,9 +6,26 @@ The Smart Classroom Management System is a web application designed to facilitat
 ## Features
 
 ### Users of the System
+- **Credintials**: Auto generated and mailed to the user..(changes to credentialsn are also mailed)
 - **Students**: Access their schedules, assignments, and attendance.
 - **Teachers**: Manage class activities, attendance, and assignments.
 - **School Management**: Oversee the entire system, including classes and schedules.
+
+## Default Credentials for SuperUser
+
+- **Email:** `admin@gmail.com`
+- **Password:** `admin`
+
+### Default Password for Each User
+
+The default password for each user is structured as follows:
+<first_name>@123
+
+For example, if a user's first name is "John," their default password would be:
+
+
+
+
 
 ### Project Features
 1. **User Authentication**
@@ -39,7 +56,7 @@ The Smart Classroom Management System is a web application designed to facilitat
 
 3. Create a Virtual Env:
    ```bash
-   python -m venv venv
+   .
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
  
 4. Install the required packages::
@@ -50,8 +67,16 @@ The Smart Classroom Management System is a web application designed to facilitat
    ```bash
    python manage.py makemigrations
    python manage.py migrate
+   
+6. Incase Of Using a Default Database File (DONOT MIGRATE!!!!)
+   ```bash
+   python manage.py runserver
+   
+8. Create SuperUser(INCASE OF NEW DATABASE)
+   ```bash
+   python manage.py createsuperuser
 
-6. Run Devlopment Server:
+7. Run Devlopment Server:
    ```bash
    python manage.py runserver
    
