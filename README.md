@@ -22,6 +22,7 @@ The default password for each user is structured as follows:
 <first_name>@123
 
 For example, if a user's first name is "John," their default password would be:
+John@123
 
 
 
